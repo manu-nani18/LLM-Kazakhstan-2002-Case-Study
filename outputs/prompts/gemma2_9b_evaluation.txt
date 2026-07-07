@@ -1,0 +1,502 @@
+﻿You are the independent evaluator for a local LLM extraction assignment.
+Source: Kazakhstan National Human Development Report 2002.
+
+Evaluate the two extractor model outputs against the evidence lines. Score each model from 1 to 5 for consistency, completeness, factual_alignment, numerical_extraction, and dashboard_usefulness.
+Do not return generic filler text. Every score must be an integer from 1 to 5.
+
+QWEN OUTPUT:
+{
+  "model": "qwen2.5:7b",
+  "chapter_summaries": [
+    {
+      "chapter_number": 1,
+      "summary": "This report examines rural development in Kazakhstan since 1991, focusing on the socio-economic aspects and challenges faced during agricultural reforms. It highlights the importance of sustainable human development through balanced policies involving economic growth, social sector improvements, and administrative reforms.",
+      "key_points": [
+        "Rural areas account for most of Kazakhstan's territory and population.",
+        "Agricultural reforms were rapid from 1992-1994 but faced challenges like price disparity and inflation.",
+        "Sustainable development requires a balanced approach involving economic, social, and administrative sectors."
+      ],
+      "important_indicators_or_numbers": [
+        {
+          "indicator": "Percentage of Kazakhstan's territory occupied by rural areas",
+          "value": "97.2%",
+          "context": "This highlights the significance of rural development in the country.",
+          "source_page_range": "13-20"
+        }
+      ],
+      "limitations_or_uncertainties": [
+        "The report does not provide specific numerical data for all indicators."
+      ]
+    },
+    {
+      "chapter_number": 2,
+      "summary": "In Kazakhstan, rural areas face significant economic challenges with high poverty rates and declining living standards due to migration and prioritization of urban development. Economic growth must be accompanied by social programs for sustainable human development.",
+      "key_points": [
+        "High poverty rate in rural areas (38%) compared to the national average (28.4%).",
+        "Migration of working-age population exacerbates rural demographic issues.",
+        "Economic growth should include social services, gender equality, and environmental protection.",
+        "Kazakhstan has vast arable land but faces challenges like declining irrigated lands and water mismanagement."
+      ],
+      "important_indicators_or_numbers": [
+        {
+          "indicator": "Share of population with incomes below subsistence minimum",
+          "value": "38%",
+          "context": "In rural areas in 2001",
+          "source_page_range": "21-26"
+        },
+        {
+          "indicator": "Irrigated land area",
+          "value": "1.2 million hectares",
+          "context": "Since the early 1990s, down from 2.3 million hectares",
+          "source_page_range": "21-26"
+        }
+      ],
+      "limitations_or_uncertainties": [
+        "Migration of working-age population affects rural demographics and economic potential."
+      ]
+    },
+    {
+      "chapter_number": 3,
+      "summary": "The chapter discusses demographic challenges, ethnic composition changes, and social development initiatives in rural Kazakhstan. Despite economic growth, poverty remains high in regions like Mangistau and Atyrau, highlighting the need for effective social policies.",
+      "key_points": [
+        "High poverty levels despite significant GDP contributions",
+        "Demographic decline with falling birth rates and migration to cities",
+        "Rural population decreases by 440,695 people between 1989-1999",
+        "Gender-age structure shows more women in reproductive age groups"
+      ],
+      "important_indicators_or_numbers": [
+        {
+          "indicator": "Poverty levels",
+          "value": null,
+          "context": "Up to 87% in some rural areas of Mangistau oblast",
+          "source_page_range": "27-48"
+        },
+        {
+          "indicator": "Population decrease",
+          "value": "-1.2 million people (7.5%) between 1989 and 1999",
+          "context": null,
+          "source_page_range": "27-48"
+        }
+      ],
+      "limitations_or_uncertainties": [
+        "Limited data on specific social indicators and economic policies",
+        "Dependence on government support for civil society development"
+      ]
+    },
+    {
+      "chapter_number": 4,
+      "summary": "This chapter outlines a strategy for rural development in Kazakhstan focusing on agricultural and infrastructure improvements. It highlights the need for state support, private property rights, and integrated policies involving local communities. Key issues include unemployment, poverty, and disparities between urban and rural areas.",
+      "key_points": [
+        "Focus on agricultural and infrastructure development",
+        "State support and private property rights essential",
+        "Integrated policies involving local communities",
+        "Addressing unemployment, poverty, and regional disparities"
+      ],
+      "important_indicators_or_numbers": [
+        {
+          "indicator": "Percentage of rural population living below the poverty line",
+          "value": "38%",
+          "context": "Rural areas have higher poverty rates compared to urban areas (20.4%)",
+          "source_page_range": "49-58"
+        },
+        {
+          "indicator": "Human Development Index (HDI) for rural areas",
+          "value": "0.725",
+          "context": "Rural HDI is lower than urban HDI (0.804)",
+          "source_page_range": "49-58"
+        }
+      ],
+      "limitations_or_uncertainties": [
+        "HDI is a simplification and should not be used for detailed analysis of rural areas",
+        "Disparities between urban and rural areas in terms of income, education, and health"
+      ]
+    }
+  ],
+  "full_report_key_findings": [
+    "The proportion of rural population with incomes below the living minimum is high, ranging from 44% to 95% across different regions.",
+    "Unemployment rates are significantly higher among males in certain age groups (16.5% and 20.2%) compared to females (19.3% and 21.0%).",
+    "Entrepreneurial activity is low, with only 0.2% of households with incomes below the subsistence minimum currently running their own business.",
+    "Access to health care remains a challenge, with over 77% of rural population unsure about what services are provided in the guaranteed package.",
+    "State expenditure on education and health protection has decreased from previous years."
+  ],
+  "core_indicators": [
+    {
+      "indicator": "Proportion of rural population with income below the living minimum",
+      "value": "44%-95%",
+      "unit": "%",
+      "year_or_period": "2001",
+      "context": "Highest in Mangistau (95%), Zhambyl (53%), Atyrau (48%), Kyzylorda (47%), Aktobe (45%) and South Kazakhstan (44%).",
+      "source_basis": "chapter/evidence line"
+    },
+    {
+      "indicator": "Unemployment rate among males in certain age groups",
+      "value": "16.5% and 20.2%",
+      "unit": "%",
+      "year_or_period": "2001",
+      "context": "Higher than females (19.3% and 21.0%) in these age groups.",
+      "source_basis": "chapter/evidence line"
+    },
+    {
+      "indicator": "Entrepreneurial activity among low-income households",
+      "value": "0.2%",
+      "unit": "%",
+      "year_or_period": "2001",
+      "context": "Only 71% of such households believe setting up a business could improve their welfare.",
+      "source_basis": "chapter/evidence line"
+    },
+    {
+      "indicator": "Access to health care among rural population",
+      "value": "Over 77%",
+      "unit": "%",
+      "year_or_period": "2001",
+      "context": "Rural population unsure about what services are provided in the guaranteed package.",
+      "source_basis": "chapter/evidence line"
+    },
+    {
+      "indicator": "State expenditure on education as a percentage of GDP",
+      "value": "3.2%",
+      "unit": "%",
+      "year_or_period": "2001",
+      "context": "Down from 3.3% in 2000.",
+      "source_basis": "chapter/evidence line"
+    },
+    {
+      "indicator": "State expenditure on health protection as a percentage of GDP",
+      "value": "1.9%",
+      "unit": "%",
+      "year_or_period": "2001",
+      "context": "Down from 2.1% in 2000.",
+      "source_basis": "chapter/evidence line"
+    }
+  ],
+  "theme_analysis": [
+    {
+      "theme": "education",
+      "importance": "high",
+      "evidence_summary": "State expenditure on education has decreased, and the majority of employed respondents have only secondary education.",
+      "keyword_count": 186
+    },
+    {
+      "theme": "health",
+      "importance": "medium",
+      "evidence_summary": "Health care access is limited, with high morbidity rates for rural population due to environmental factors.",
+      "keyword_count": 119
+    },
+    {
+      "theme": "inequality",
+      "importance": "high",
+      "evidence_summary": "High income inequality among rural households, with significant regional disparities in poverty levels.",
+      "keyword_count": 628
+    },
+    {
+      "theme": "economy",
+      "importance": "medium",
+      "evidence_summary": "Low entrepreneurial activity and high unemployment rates indicate economic challenges in rural areas.",
+      "keyword_count": 277
+    },
+    {
+      "theme": "gender",
+      "importance": "low",
+      "evidence_summary": "Unemployment rates are higher among males, but there is limited gender-specific data provided.",
+      "keyword_count": 90
+    },
+    {
+      "theme": "climate_environment",
+      "importance": "medium",
+      "evidence_summary": "Morbidity rates for rural population due to environmental factors and TB cases have increased since 1991.",
+      "keyword_count": 200
+    },
+    {
+      "theme": "employment",
+      "importance": "high",
+      "evidence_summary": "High unemployment rates, low entrepreneurial activity, and limited employment opportunities are significant challenges.",
+      "keyword_count": 98
+    }
+  ],
+  "dashboard_ready_plot_ideas": [
+    "Proportion of rural population with income below the living minimum by region",
+    "Unemployment rates among males and females by age group",
+    "Entrepreneurial activity among low-income households",
+    "State expenditure on education and health protection as a percentage of GDP over time"
+  ],
+  "extraction_notes": [
+    "The data provided is from 2001, which may not reflect current conditions.",
+    "Some values are percentages without specific numbers, indicating uncertainty or need for further clarification."
+  ]
+}
+
+LLAMA OUTPUT:
+{
+  "model": "llama3.1:8b",
+  "chapter_summaries": [
+    {
+      "chapter_number": 1,
+      "summary": "The report focuses on rural development in Kazakhstan since 1991, considering human development aspects beyond agricultural development. It highlights the importance of people-centered economic growth and social development, and discusses challenges such as rural outmigration, price disparity, and lack of technological links.",
+      "key_points": [
+        "Rural areas account for 97.2% of Kazakhstan's territory and almost half its population",
+        "Agricultural reforms in Kazakhstan can be broken down into four stages: rapid reform (1992-1994), consolidation (1995-1997), expansion (1998-2000), and stabilization (2001-present)",
+        "Rural outmigration started in 1994 due to high inflation, loss of assets, and lack of technological links",
+        "Empowering regions through fiscal reform can strengthen rural communities and increase local self-governance potential"
+      ],
+      "important_indicators_or_numbers": [
+        {
+          "indicator": "97.2%",
+          "value": null,
+          "context": "percentage of Kazakhstan's territory that is rural",
+          "source_page_range": "13-20"
+        }
+      ],
+      "limitations_or_uncertainties": [
+        "Rural outmigration and lack of technological links hindered agricultural development",
+        "High inflation and price disparity affected rural communities"
+      ]
+    },
+    {
+      "chapter_number": 2,
+      "summary": "The chapter highlights the importance of economic growth in achieving sustainable rural human development. It emphasizes that economic growth can lead to better living standards only if accompanied by social development programs, including provision of basic services and elimination of inequality. The chapter also discusses the impact of environmental degradation on the rural economy and the need for sustainable land use practices.",
+      "key_points": [
+        "Economic growth can lead to better living standards only if accompanied by social development programs",
+        "Environmental degradation has a significant impact on the rural economy",
+        "Sustainable land use practices are necessary for rural development"
+      ],
+      "important_indicators_or_numbers": [
+        {
+          "indicator": "38%",
+          "value": "Population with incomes below subsistence minimum in rural areas",
+          "context": "2001 statistics",
+          "source_page_range": "21-26"
+        },
+        {
+          "indicator": "28.4%",
+          "value": "Population with incomes below subsistence minimum for the country as a whole",
+          "context": "2001 statistics",
+          "source_page_range": "21-26"
+        }
+      ],
+      "limitations_or_uncertainties": [
+        "The chapter does not provide specific numerical values for some indicators, and some information is based on general trends rather than concrete data."
+      ]
+    },
+    {
+      "chapter_number": 3,
+      "summary": "The chapter discusses social development in rural Kazakhstan, highlighting demographic problems, poverty levels, and the need for efficient demographic policy, human capacity development, and poverty reduction. It also examines the ethnic composition of the rural population and the impact of migration on population growth rates.",
+      "key_points": [
+        "Kazakhstan's rural population decreased by 440,695 between 1989-1999",
+        "The number of rural Kazakhs grew in several regions, while falling in others",
+        "The rural Russian population declined throughout the country",
+        "Poverty levels are high in some rural areas, with up to 87% of people living below the poverty line"
+      ],
+      "important_indicators_or_numbers": [
+        {
+          "indicator": "Population decrease",
+          "value": "440,695",
+          "context": "Between 1989-1999",
+          "source_page_range": "27-48"
+        },
+        {
+          "indicator": "Poverty rate",
+          "value": "87%",
+          "context": "In some rural areas",
+          "source_page_range": "27-48"
+        }
+      ],
+      "limitations_or_uncertainties": [
+        "The chapter does not provide specific data on education, health, or employment in rural Kazakhstan."
+      ]
+    },
+    {
+      "chapter_number": 4,
+      "summary": "The chapter outlines a strategic approach to rural development in Kazakhstan. It emphasizes the importance of agricultural development, infrastructure improvement, and social policy support. The authors propose three strategies: agricultural development, infrastructure development and social development policy, and integration of state and local efforts. They also highlight the need for land reforms, state support for individual households, and development of social policy in rural areas.",
+      "key_points": [
+        "Agricultural development is crucial to resolving current rural problems such as unemployment, poverty, and poor infrastructure",
+        "Infrastructure improvement and social policy support are essential for rural regeneration",
+        "Three strategies are proposed: agricultural development, infrastructure development and social development policy, and integration of state and local efforts"
+      ],
+      "important_indicators_or_numbers": [
+        {
+          "indicator": "44%",
+          "value": null,
+          "context": "Rural residents account for the total population of the country",
+          "source_page_range": "49-58"
+        }
+      ],
+      "limitations_or_uncertainties": [
+        "The Human Development Index (HDI) has its limitations and should not be used beyond its design potential",
+        "Deep analysis of human development calls for thorough research into economic, social, political, and administrative conditions specific to each setting"
+      ]
+    }
+  ],
+  "full_report_key_findings": [
+    "The highest average wages have been registered in Mangistau oblast, while the lowest average wages have been in Almaty oblast.",
+    "Average wages in regions exhibit a 200% difference;",
+    "average wages in agriculture differ 100% across regions.",
+    "Over the last decade the highest average wages have been registered in Mangistau oblast, while the lowest average wages have been in Almaty oblast; the highest wages for agricultural employees have been observed in 1991-1992.",
+    "The highest proportions of rural population with consumed incomes below the living minimum are seen in Mangistau (95%), Zhambyl (53%), Atyrau (48%), Kyzylorda (47%), Aktobe (45%) and South Kazakhstan (44%) regions.",
+    "The highest ratio of 'poor regional population/total country poor population' is observed in South Kazakhstan (23.2%), Almaty oblast (18.5%), Zhambyl oblast (12.3%) and Kostanai oblast (7.4%).",
+    "Among rural households, whose income per person is below the subsistence minimum the majority are those with 5 and more people (51%).",
+    "The average number of dependants in low income households is 3.3."
+  ],
+  "core_indicators": [
+    {
+      "indicator": "Average monthly wages",
+      "value": "3,411 tenge for men and 5,411 tenge for women",
+      "unit": "tenge",
+      "year_or_period": "2001",
+      "context": "Overall Industry Agriculture",
+      "source_basis": "Table 3.2"
+    },
+    {
+      "indicator": "Proportion of population with income below the living minimum",
+      "value": "32.09%",
+      "unit": "%",
+      "year_or_period": "2001",
+      "context": "Total, including Adults Teenagers Children",
+      "source_basis": "Table 3.4"
+    },
+    {
+      "indicator": "Morbidity rate for rural population in Kazakhstan",
+      "value": "43,880",
+      "unit": "number of first time patients per 100,000 people",
+      "year_or_period": "2001",
+      "context": "Total, including Adults Teenagers Children",
+      "source_basis": "Table 3.4"
+    },
+    {
+      "indicator": "Health condition of rural population in 2001 (diseases caused by environmental factors)",
+      "value": "14,283",
+      "unit": "number of first time patients per 100,000 people",
+      "year_or_period": "2001",
+      "context": "Total, including Adults Teenagers Children",
+      "source_basis": "Table 3.5"
+    }
+  ],
+  "theme_analysis": [
+    {
+      "theme": "education",
+      "importance": "high",
+      "evidence_summary": "Significant gains in health protection, such as longer life expectancy, falls in infant mortality, close to 100% children immunisation, infection prevention and control.",
+      "keyword_count": 186
+    },
+    {
+      "theme": "health",
+      "importance": "medium",
+      "evidence_summary": "TB cases have more than doubled since 1991 and there is widespread growth of TB in rural areas. Mortality caused by tuberculosis in Kostanai oblast accounted for more than a third (36.6%) of all cases in Kazakhstan in 2000.",
+      "keyword_count": 119
+    },
+    {
+      "theme": "inequality",
+      "importance": "high",
+      "evidence_summary": "The highest proportions of rural population with consumed incomes below the living minimum are seen in Mangistau (95%), Zhambyl (53%), Atyrau (48%), Kyzylorda (47%), Aktobe (45%) and South Kazakhstan (44%) regions.",
+      "keyword_count": 628
+    },
+    {
+      "theme": "economy",
+      "importance": "medium",
+      "evidence_summary": "Average wages in regions exhibit a 200% difference; average wages in agriculture differ 100% across regions. The highest average wages have been registered in Mangistau oblast, while the lowest average wages have been in Almaty oblast.",
+      "keyword_count": 277
+    },
+    {
+      "theme": "gender",
+      "importance": "low",
+      "evidence_summary": "Some 84.5% of the polled low income households have access to land. Those not interested gave the following reasons: poor access to water for irrigation was blamed by 22.8% of respondents; 13.8% said they lacked resources to invest in land; 10.5% complained of poor health and 10.1% mentioned their age as an obstacle.",
+      "keyword_count": 90
+    },
+    {
+      "theme": "climate_environment",
+      "importance": "medium",
+      "evidence_summary": "TB cases have more than doubled since 1991 and there is widespread growth of TB in rural areas. Mortality caused by tuberculosis in Kostanai oblast accounted for more than a third (36.6%) of all cases in Kazakhstan in 2000.",
+      "keyword_count": 200
+    },
+    {
+      "theme": "employment",
+      "importance": "low",
+      "evidence_summary": "The following data were collected with regard to the employment status of rural residents: 40.6% of respondents were employed full time in 2001 (with 45.9% of these employed in state agencies); 59.4% were self-employed (74,9% of these working in their own households, and 1.4% acting as employers themselves).",
+      "keyword_count": 98
+    }
+  ],
+  "dashboard_ready_plot_ideas": [
+    "Plot the proportion of population with income below the living minimum over time.",
+    "Plot the morbidity rate for rural population in Kazakhstan over time.",
+    "Plot the health condition of rural population in 2001 (diseases caused by environmental factors) over time.",
+    "Plot the average monthly wages for men and women over time."
+  ],
+  "extraction_notes": [
+    "Note: The report year is assumed to be 2002 based on the provided chapter outputs and evidence lines."
+  ]
+}
+
+SOURCE EVIDENCE LINES:
+[
+  "This rural focus can also be explained by the fact that rural areas account for 97.2% of Kazakhstan's territory and almost half the country's population.",
+  "The second article of the Law of the Kazakh SSR dated February 13 th, 1991 \"On Prioritized Development of Auls, Villages and Agricultural and Industrial Sector of the Kazakh SSR\" offers a definition of a rural network which includes auls, villages, khutors, zaimkas, winter settlements and other settlements for distant-pasture farming, as well as villages and rayon centers the majority of whose population is employed in the production, processing, storage and sale of agricultural produce.",
+  "Article three of the Law of the RK dated December 8th, 1993, number 2572-XII \"On Administrative-territorial Division of the Republic of Kazakhstan\" defines an aul (village) as a settlement whose population exceeds 50 people, with agricultural employees and members of their families accounting for over half the inhabitants.",
+  "1.1 Rural development policy in Kazakhstan during the years of independence pects of rural development in Kazakhstan and their effects on the rural population.",
+  "Thus, inadequate implementation of market reforms in agriculture from 1992-1994 resulted in falling output, a deteriorating asset base and increasingly negative trends in both production and social sectors and significant increase in migration of the rural population to cities.",
+  "Average wages in agriculture were 3.8 times lower than in industry.",
+  "After the 'optimisation' of education and health care sectors had been completed, nearly 60% of villages had lost their medical care stations, libraries, clubs and food shop, while more than 50% of rural settlements did not have post offices and the number of children not attending schools increased.",
+  "Falling living standards and higher unemployment rates led to rising levels of 'self-employment', to 2 million by 2001, as well as increased migration, which, in its turn, led to a significant drop in the country's population, including rural areas.",
+  "To address this issue, in March 2002 the government announced its decision to develop a special education program known as \"Aul mektebi\".",
+  "- a program of micro-loans, launched in 1998 and active until 2000, targeted support for low income population groups and small business development;",
+  "According to official statistics, in 2001 the share of population with incomes below the subsistence minimum in rural areas was 38%, compared with 28.4% for the country as a whole.",
+  "2.1 The Rural Economy: an Analysis of the Processes population, whose make-up has changed due to the migration to cities of significant numbers of the working age population, leaving a skewed population structure with high proportions of children and the elderly.",
+  "Thus, share of agriculture in GDP fell from 34% in 1990 to 9.9% in 1999 and 8.7% in 2001.",
+  "Plant production has decreased by one third, while live- Source: Statistics Agency of Kazakhstan, 2001 Figure 2.2 Structure of active agricultural units Source: Statistics Agency of Kazakhstan, 2001 Figure 2.3 Share of agricultural production in GDP, Kazakhstan, 1990-2001 stock breeding output has more than halved.",
+  "The share of agriculture in Kazakhstan's GDP over the last decade is presented in figure 2.3.",
+  "Taking into account that 2,835,500 persons are 'self-employed', with 1,817,700 of them living in rural areas, the complexity of the related social problems is clear, since a selfemployed individual is usually not covered by pension schemes, social security or health care systems.",
+  "CHAPTER 2 The Economy as a Factor in Sustainable Rural Human Development 5 Conference on poverty reduction, Astana, April 25-26, 2002.",
+  "In a number of rural areas in Mangistau oblast poverty levels are as high as 87%, indicating a failure in resource redistribution policy that effectively rules out human capacity development.",
+  "The 1989 census showed the country's population to be 16,199,154 while the corresponding figure at the 1999 census was down to 14,953,126, a net decrease of 1.2 million people, or nearly 7.5 percent.",
+  "Over the same period Kazakhstan's rural population decreased by some 440,695, and currently stands at 6,579,064 (44% of the total population).",
+  "The largest falls in population have occurred in Kostanai oblast (140,281 people), North Kazakhstan (133,266), Akmola (106,180), East Kazakhstan (104,348) as well as Karaganda oblast.",
+  "Between the 1989 and 1999 censuses rural population grew in South Kazakhstan (by 164,171), Mangistau (30,817) and Atyrau (15,468) oblasts.",
+  "According to the 1999 census the male population of rural areas was 3,283,300, while the number of females was 3,292,600.",
+  "Data on the age structure of the male and female population for January 1 st 2000 shows a lower percentage of 'able to work' women in rural areas compared to the urban female population (50% and 60% respectively).",
+  "60.3%) show no significant difference between rural and urban areas.",
+  "Total Kazakhs Russians Ukrainians Uzbeks Germans Others 7,016,518 4,007,955 1,393,040 310,704 208,138 485,032 611,449 6,575,823 4,369,520 1,035,974 207,909 253,956 171,829 539,935 Table 3.1 Ethnic make-up of Kazakhstan's rural population in 1989 & 1999 ban areas, while in the structure of the elderly population women outnumber men in both urban and rural areas.",
+  "Both cities and villages have an ageing population, as the proportion of over 65s increased from 5.6% in 1989 to 6.7% in 1999.",
+  "From 1989 to 1999 the total rural population shrank by 440,695 or approximately 6 per cent.",
+  "Falling numbers of rural Kazakh population were observed in East Kazakhstan (a drop of 28,006 people) and Karaganda regions (-15,718).",
+  "Nation-wide, the rural Kazakh population grew by 361,656 (approx.",
+  "Overall, Kazakhstan's rural Russian population decreased by 357,066 (approx.",
+  "Numbers of Germans followed a similar downward path, falling most significantly in Akmola oblast (a decrease of 56,960 people), North Kazakhstan (40,389), Almaty oblast (39,487) and Kostanai oblast (36,775), an overall decrease of 313,403 or approximately twothirds of the ethnic German population of rural Kazakhstan.",
+  "The Uzbek population also shrank in all rural areas except for a significant increase in South Kazakhstan oblast, where the number of rural Uzbek residents rose by 48,398, contributing to a rise in the total number of rural Uzbeks of 45,818, or approximately 22 per cent.",
+  "The second major emigration for Slavs and Kazakhs occurred in 1997, when the privatisation outcomes and effects of a parallel 'optimisation' process resulted in a substantial reduction in social provision in rural areas, mainly affecting rural health protection and education systems.",
+  "This can be explained by the emigration 'mood' prevailing since 1994 Figure 3.2 Natural population growth in rural areas in 2000 (per 1,000 persons) Source: The Ministry of Health Protection of the Republic of Kazakhstan, 2001 and a gradual shrinkage of the potential emigrant base of people of 'mobile' age."
+]
+
+Return JSON with this exact structure:
+{
+  "evaluator_model": "gemma2:9b",
+  "model_scores": [
+    {
+      "model": "qwen2.5:7b",
+      "consistency": 1,
+      "completeness": 1,
+      "factual_alignment": 1,
+      "numerical_extraction": 1,
+      "dashboard_usefulness": 1,
+      "strengths": ["specific strength"],
+      "weaknesses": ["specific weakness"],
+      "possible_hallucinations_or_unsupported_claims": ["specific unsupported claim or none found"]
+    },
+    {
+      "model": "llama3.1:8b",
+      "consistency": 1,
+      "completeness": 1,
+      "factual_alignment": 1,
+      "numerical_extraction": 1,
+      "dashboard_usefulness": 1,
+      "strengths": ["specific strength"],
+      "weaknesses": ["specific weakness"],
+      "possible_hallucinations_or_unsupported_claims": ["specific unsupported claim or none found"]
+    }
+  ],
+  "agreement_between_models": ["specific agreement"],
+  "important_disagreements": ["specific disagreement"],
+  "recommended_final_extraction": {
+    "best_model_for_summaries": "model name",
+    "best_model_for_indicators": "model name",
+    "items_to_verify_manually": ["specific item"]
+  }
+}
+

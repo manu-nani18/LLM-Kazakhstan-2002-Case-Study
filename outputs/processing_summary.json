@@ -1,0 +1,36 @@
+{
+  "pdf": "D:\\Projects\\LLM-Kazakhstan-2002-Case-Study\\data\\kazakhstan-2002-nhdr.pdf",
+  "page_count": 123,
+  "cleaned_word_count": 38944,
+  "chapter_count": 4,
+  "chapters": [
+    {
+      "chapter_number": 1,
+      "title": "Rural Development in Kazakhstan",
+      "start_page": 13,
+      "end_page": 20,
+      "word_count": 5567
+    },
+    {
+      "chapter_number": 2,
+      "title": "The Economy as a Factor in Sustainable Rural Human Development",
+      "start_page": 21,
+      "end_page": 26,
+      "word_count": 3790
+    },
+    {
+      "chapter_number": 3,
+      "title": "Social Development in Rural Kazakhstan",
+      "start_page": 27,
+      "end_page": 48,
+      "word_count": 14586
+    },
+    {
+      "chapter_number": 4,
+      "title": "A Proposed Approach to Rural Development",
+      "start_page": 49,
+      "end_page": 58,
+      "word_count": 7560
+    }
+  ]
+}

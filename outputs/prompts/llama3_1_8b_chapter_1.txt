@@ -1,0 +1,60 @@
+﻿You are extracting information from the Kazakhstan National Human Development Report 2002.
+Model role: llama3.1:8b extractor.
+
+Chapter 1: Rural Development in Kazakhstan
+Source pages: 13-20
+
+TASK:
+Return JSON with this exact structure:
+{
+  "chapter_number": 1,
+  "chapter_title": "Rural Development in Kazakhstan",
+  "summary_under_100_words": "chapter summary",
+  "key_points": ["specific key point"],
+  "important_indicators_or_numbers": [
+    {"indicator": "indicator name", "value": "reported value", "context": "source context", "source_page_range": "13-20"}
+  ],
+  "themes_present": ["education", "health", "inequality", "economy", "gender", "climate_environment", "employment"],
+  "limitations_or_uncertainties": ["specific limitation"]
+}
+
+Rules:
+- Summary must be fewer than 100 words.
+- Use only the chapter text.
+- If no numerical value is found, use an empty list.
+
+CHAPTER TEXT:
+The first National Report on Human Development in Kazakhstan was published seven years ago. Since its publication the notion of 'human development' has become an intrinsic part of everyday language in Kazakhstan, not to mention the language of politics and science. Nowadays no one doubts the fact that analysing the economy, social sector or administrative reforms from a human development perspective allows us to better assess the effects and ultimate goals of given changes.
+Abstract reforms, remote from people, may bring about temporary benefits that are often outweighed by greater negative 'human' costs.
+Our own country has learnt the truth of the above thesis at different stages of the reform process. It was the 'human' cost incurred during the early stages of economic, social and political transformation, which created an understanding of the idea that it would be unwise to ignore human aspects, while sustainable development would be unrealistic without securing appropriate living conditions for the whole population.
+This report, "Rural Development in Kazakhstan: Challenges and Prospects" is an attempt to look at the development of the country's rural areas since 1991, not only from the agricultural development viewpoint, but also through the prism of overall human development in rural areas. This rural focus can also be explained by the fact that rural areas account for 97.2% of Kazakhstan's territory and almost half the country's population. Besides, as President Nazarbaev noted in a recent address: "...any revolutionary cataclysms are most likely to affect rural areas", an argument that will be further discussed in this report.
+The second article of the Law of the Kazakh SSR dated February 13 th, 1991 "On Prioritized Development of Auls, Villages and Agricultural and Industrial Sector of the Kazakh SSR" offers a definition of a rural network which includes auls, villages, khutors, zaimkas, winter settlements and other settlements for distant-pasture farming, as well as villages and rayon centers the majority of whose population is employed in the production, processing, storage and sale of agricultural produce. Article three of the Law of the RK dated December 8th, 1993, number 2572-XII "On Administrative-territorial Division of the Republic of Kazakhstan" defines an aul (village) as a settlement whose population exceeds 50 people, with agricultural employees and members of their families accounting for over half the inhabitants. Both documents consider the village as a structural element of agricultural production. In this regard, it is important to discuss other aspects of the development of a rural settlement as of a socio-territorial subsystem, and take this into account when developing a balanced rural development policy as well as when evaluating the overall level of national development.
+A development process centered on people, suggests that economic growth that does not lead to better living standards for every individual is unsustainable from social, political and environmental viewpoints. Consequently, in order to stimulate people-oriented economic growth and social development, it is necessary to strengthen state administration at the national and local levels with the goal achieved subject to active involvement of the public.
+The economy, social sector and administration are difficult to rank in terms of their relative importance to human development, as they all are complementary. Each area is "res-ponsible" for certain aspects of social develop-ment and only taken together do they constitute true CHAPTER 1. RURAL DEVELOPMENT IN KAZAKHSTAN
+Chapter 1.
+Rural Development In Kazakhstan
+
+sustainable human development. Therefore this report considers in turn each of these three as-
+1.1 Rural development policy in Kazakhstan during the years of independence pects of rural development in Kazakhstan and their effects on the rural population.
+The process of agricultural reforms in the country can be broken down into four stages:
+The period 1992-1994 was characterised by rapid reform of agricultural entities. The role of the state at that stage was to create a new legal framework. Consequently, laws on land, privatisation and agricultural entities were adopted. The major goals of land reform - transformation of land relations and creation of alternative forms of land use - were achieved.
+By the end of 1994 the number of agricultural entities had increased eight times compared with 1990 as a result of privatisation of collective farms, known as sovkhozs and kolkhozs. By 1994, therefore, alternative forms of agricultural operating unit had been established, but total agricultural output had not increased, due to economic, legal and social barriers to efficient production and rational land use.
+The majority of the rural population appeared unready to accept reforms, which represented fundamental changes in the rural lifestyle. Technological links in the production process were disrupted. Also the serious problem of price disparity between industrial and agricultural production emerged at that time as the government, having liberalised prices for industrial goods and services, put a check on growth in prices for agricultural produce.
+When agricultural prices were finally liberalised in 1994, higher prices caused a fall in consumer purchasing power, which prevented agricultural producers from raising prices to account for increases in industrial prices.
+High inflation then led to the loss of current and partly fixed assets (primarily - livestock) as livestock owners slaughtered it to raise cash.
+It was at this point that significant rural outmigration started.
+The principle of continuity of technological processes on farms, battery farms and similar enterprises was not upheld. Several factors, such as accelerated privatisation of state 
+
+[middle section removed for prompt length]
+
+rastructure development programs, such as "environmental rent" paid by companies; extracting non-renewable mineral resources, notwithstanding their ownership; introduction of "green" and other technological innovations in agriculture, with the support of international organisations where possible and appropriate.
+As for local self-governance proper, one pre-requisite is the elected status of self-governance committees and their accountability to the local population. The idea of combining the functions of the state administrator and the leader of the self-governance body in order to increase effectiveness may be acceptable provided the individual concerned is elected.
+This scenario might be most appropriate for small, but self-sustainable rural settlements.
+All this requires an adequate legal framework, with all laws regulating these processes linked to each other - particularly those laws regulating local self-governance and local state administrations and distribution of their powers and responsibilities; election laws;
+property laws; tax code and other relevant acts.
+However, because the rural sector and rural economy play an important part in the country's life and rural crisis could destabilise social processes and deprive Kazakhstan of a vital component of its development, they must be included in broader external economic policy considerations. The focus here is Kazakhstan's expected accession to the WTO in 2003 and the conditions of accession. One beneficial condition would be an extended transition period for the agricultural sector after joining to allow better assessment of decentralization and self-governance realities and the introduction of viable institutions of self-governance.
+Kazakhstan currently has a pronounced dependence on food imports. It should be borne in mind, though, that even if involvement in global economic processes is irreversible, most countries (except the least developed), either do rely on their own food production, or have this alternative in case of emergency circumstances.
+The role of rural communities with regard to domestic food production can be very important if mobilisation and support of active and accountable community groups such as self-governance bodies becomes a priority in state rural development policy.
+For Kazakhstan, with its huge, sparsely populated territory and large number of rural environmental problems, such a policy should not be viewed as protectionism but rather as a necessity - a key element in the pursuit of sustainable development for rural and urban communities.
+If the policy of empowering regions, in particular with fiscal reform, leads to higher local budget revenues and increased national budget allocations, the cumulative effect should be to strengthen rural communities, which, in turn, should increase local self-governance potential. Through accumulation of resource and management capacity, rural communities will be able, independently, to solve their development problems. But even then, considering the harsh climate and other geographical factors, Kazakhstan's rural communities will remain in need of state policy support.
+

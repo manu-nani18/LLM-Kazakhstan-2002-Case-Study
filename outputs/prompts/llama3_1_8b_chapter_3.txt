@@ -1,0 +1,65 @@
+﻿You are extracting information from the Kazakhstan National Human Development Report 2002.
+Model role: llama3.1:8b extractor.
+
+Chapter 3: Social Development in Rural Kazakhstan
+Source pages: 27-48
+
+TASK:
+Return JSON with this exact structure:
+{
+  "chapter_number": 3,
+  "chapter_title": "Social Development in Rural Kazakhstan",
+  "summary_under_100_words": "chapter summary",
+  "key_points": ["specific key point"],
+  "important_indicators_or_numbers": [
+    {"indicator": "indicator name", "value": "reported value", "context": "source context", "source_page_range": "27-48"}
+  ],
+  "themes_present": ["education", "health", "inequality", "economy", "gender", "climate_environment", "employment"],
+  "limitations_or_uncertainties": ["specific limitation"]
+}
+
+Rules:
+- Summary must be fewer than 100 words.
+- Use only the chapter text.
+- If no numerical value is found, use an empty list.
+
+CHAPTER TEXT:
+The UNDP's Global report on human development states that countries with the same GDP per capita levels can be ranked differently with regard to the effectiveness of government social policy. Conversely, high human development levels are sometimes registered in countries with relatively low GDP per capita. The conclusion to be drawn is that economic growth can effectively contribute to human development only when it is accompanied by implementation of an adequate social program.
+In Kazakhstan, the development of two oblasts in particular - Mangistau and Atyrau - serves to illustrate well the above viewpoint.
+While contributing most to the national budget, these oblasts also have the highest propor-
+3.1. Demographic Factors and the Dynamics of Ethnic Processes tions of poor people among their population.
+In a number of rural areas in Mangistau oblast poverty levels are as high as 87%, indicating a failure in resource redistribution policy that effectively rules out human capacity development. Social policy must include the following elements to be oriented on the individual:
+- efficient demographic policy;
+- conditions for human capacity development and poverty reduction;
+- social capital expansion and wider opportunities for individual involvement in community life.
+Based on the above scheme we now consider social sector development in Kazakhstan's rural areas from 1991 to 2001.
+Analysis of statistics on population composition during the last decade indicates that the country has faced serious demographic problems. The 1989 census showed the country's population to be 16,199,154 while the corresponding figure at the 1999 census was down to 14,953,126, a net decrease of 1.2 million people, or nearly 7.5 percent. Over the same period Kazakhstan's rural population decreased by some 440,695, and currently stands at 6,579,064 (44% of the total population). This can be explained by factors such as falling birth rates and migration of rural people to cities in search of jobs and better living conditions.
+The largest falls in population have occurred in Kostanai oblast (140,281 people), North Kazakhstan (133,266), Akmola (106,180), East Kazakhstan (104,348) as well as Karaganda oblast. This can largely be explained by the ethnic make-up of these oblasts, since central and northern Kazakhstan have relatively high proportions of ethnic Russians, which pre-determined greater emigration flows.
+Conversely, southern and western Kazakhstan are more Kazakh in composition, which has led to smaller out-migration flows and even some natural population increases in these regions. Thus, in 2000 the migration outflow from Akmola, Karaganda, Kostanai and East Kazakhstan oblasts was in the 28-39,000 range, while the corresponding numbers for Atyrau and Mangistau oblasts were 4,290 and 7,880 people. Relatively small migration outflow numbers (inflow for Mangistau) coupled with traditionally higher birth rates have led to population growth in the west and south of the country.
+Between the 1989 and 1999 censuses rural population grew in South Kazakhstan (by 164,171), Mangistau (30,817) and Atyrau (15,468) oblasts. Overall, however, Kazakhstan still suffers from by falling population growth rates and continuing net migration outflows, with an increasingly urban population, uneven population distribution and low population density.
+The gender-age structure of the rural population is also shaped by demographic, social and economic factors. According to the 1999 census the male population of rural areas was 3,283,300, while the number of females was 3,292,600. The proportion of reproductive aged women in rural areas grew from 44.8% to 49.7% between 1989-1999, representing an increase from 1,584,400 to 1,635,000.
+Data on the age structure of the male and female population for January 1 st 2000 shows a lower percentage of 'able to work' women in rural areas compared to the urban female population (50% and 60% respectively). The corresponding figures for men (60% and
+60.3%) show no significant difference between rural and urban areas. Villages, with more many-children families, have greater proportions of younger people (under 15) than ur- CHAPTER 3 Social Development in Rural Kazakhstan
+Chapter 3.
+Social Development in Rural Kazakhstan
+
+Total Kazakhs Russians Ukrainians Uzbeks Germans Others 7,016,518 4,007,955 1,393,040 310,704 208,138 485,032 611,449 6,575,823 4,369,520 1,035,974 207,909 253,956 171,829 539,935 Table 3.1 Ethnic make-up of Kazakhstan's rural population in 1989 & 1999 ban areas, while in the structure of the elderly population women outnumber men in both urban and rural areas.
+Both cities and villages have an ageing population, as the proportion of over 65s increased from 5.6% in 1989 to 6.7% in 1999.
+One of the reasons for the relatively high rate of population ageing is the fact that emigrants are mainly those of working age, while the elderly are far less mobile.
+The ethnic composition of the rural population of Kazakhstan is currently as follows:
+Kazakh 66.6%; Russian 15.8%; other ethnicities 17.6%. We will now look at ethnic composition dynamics in the context of rural changes. The table below gives figures for various ethnic groups registered by the censuses of 1989 and 1999:
+From 1989 to 1999 the total rural population shrank by 440,695 or approximately 6 per cent. The number of rural Kazakhs grew in the following regions: South Kazakhstan (increase of 175,715 people), Zhambyl (42,058), Mangistau (30,998), West Kazakhstan (23,771), Atyrau (20,093) and Akmola (19,448). Falling numbers of rural Kazakh population were observed in East Kazakhstan (a drop of 28,006 people) and Karaganda regions (-15,718). Nation-wide, the rural Kazakh population grew by 361,656 (approx. 9%) from 1989 to 1999.
+The number of rural Russians fell throughout the country, with
+
+[middle section removed for prompt length]
+
+ land to facilitate small business development. For example, in Bolshaya Vladimirovka village the rayon akimat let out, on favourable terms, a building for the women's organisation "Enterprising women of Beskaragain rayon" to set up a bakery.
+Given the continuing shortage of social capital, local authorities often lack administrative and practical experience in promoting public involvement. In such cases the public can assist state bodies through sharing new 'social technologies' (training, advice, projects, research), which can help define and address community needs by means of public involvement and developing community action plans.
+These new 'technologies' can also facilitate greater public participation in decision-making, since they value individual opinion and help foster voluntary activity, further promoting more democratic approaches in rural areas.
+It is possible to conclude, therefore, that despite the many problems rural areas now face, a sound foundation is emerging for further civic development in rural communities, provided by greater economic independence, more active public involvement in decision making and the implementation of democratic reforms. In addition, certain cultural traditions of 'collectivism' and community cooperation provide a potentially supportive backdrop for the establishment of a functioning civil society in Kazakhstan's rural areas.
+Nevertheless, civil society development is to a large extent dependent on a pro-active and reform-minded approach from the state, for example by creating a favourable legal and economic framework and facilitating the implementation of national and regional development programs. In addition, the state should encourage corporate charity initiatives and integration of all public forces as well as in- CHAPTER 3 Social Development in Rural Kazakhstan
+
+ternational organisations and foundations.
+The legal and economic environment in which civil society operates is currently regulated by a number of laws such "The Law on Non-commercial Organisations" adopted on 16 January 2001; "The Law on Public Unions"; "The Law on Trade Unions" adopted 9 April 1993; "The Law on Political Parties" adopted 2 July 1996; "The Law on Freedom of Faith and Religious Organisations" adopted 15 January 1992; and "The Law on Consumer Co-operatives" adopted 8 May 2001.
+Significantly, the state now regards civil society organizations first of all as legitimate partners in dealing with social problems and also as "an important resource for further democratisation". "The Concept of State Support of Non-Governmental Organisations in the Republic of Kazakhstan" was adopted by the government on 23 January 2002. This document states that "the major goal of state support for non-governmental organisations is the creation of a new model of relations in implementing social policy in the Republic of Kazakhstan through active co-operation with socially-oriented NGOs, their involvement in the decision-making process, as well as offering advice, informational, methodological and technical support, in addition to support in the form of the state social procurement program".
+

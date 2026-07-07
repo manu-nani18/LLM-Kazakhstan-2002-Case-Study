@@ -1,0 +1,153 @@
+﻿You are extracting information from the Kazakhstan National Human Development Report 2002.
+Model role: llama3.1:8b extractor.
+
+Chapter 4: A Proposed Approach to Rural Development
+Source pages: 49-58
+
+TASK:
+Return JSON with this exact structure:
+{
+  "chapter_number": 4,
+  "chapter_title": "A Proposed Approach to Rural Development",
+  "summary_under_100_words": "chapter summary",
+  "key_points": ["specific key point"],
+  "important_indicators_or_numbers": [
+    {"indicator": "indicator name", "value": "reported value", "context": "source context", "source_page_range": "49-58"}
+  ],
+  "themes_present": ["education", "health", "inequality", "economy", "gender", "climate_environment", "employment"],
+  "limitations_or_uncertainties": ["specific limitation"]
+}
+
+Rules:
+- Summary must be fewer than 100 words.
+- Use only the chapter text.
+- If no numerical value is found, use an empty list.
+
+CHAPTER TEXT:
+The aim of this chapter is to outline the strategic directions of the development of the Kazakhstani village based on analyses of the previous chapters and to discuss the measures necessary to make market reforms contribute to human development rather than inhibit it.
+To achieve this target, efforts should focus on some aspects of development that were previously neglected. The reform period has shown that without the active support of the state, including direct financial aid, the village is bound to be poor in market economy conditions. Secondly, rural residents account for 44% of the total population of the country.
+Rural development processes were historically shaped by the availability of land resources and labor skills of the population. Agricultural development defined the way of life for Kazakhs, and, subsequently, Kazakhstanis.
+Rural regeneration is therefore a means of preservation and development of national
+4.1 Strategy of agricultural development traditions and the national genetic base. Thirdly, a key to many current rural problems - such as unemployment, poverty and poor infrastructure - is the development of agriculture, necessitating a multi-faceted state rural policy. In the coming decade the main policy priorities should be the completion of land reforms, state support of individual households and the development of social policy in rural areas.
+The listed problems can be resolved through the integrated implementation of the following three strategies:
+1. Strategy of agricultural development;
+2. Strategy of infrastructure development and social development policy;
+3. Strategy to integrate efforts of the state and local communities in the process of rural revival.
+The following sections discuss each of these strategy areas in greater detail.
+The major focus areas of agricultural development in the country were set out in the State Agricultural Food Production Program of the Republic of Kazakhstan for 2003-2005, passed by Presidential Decree number 889, dated June 5 th 2002.
+The major goal of the program is to ensure sufficient food supply for Kazakhstan by building an efficient system of agriculture and the production of competitive output.
+Key priorities of agricultural development include:
+-Increase in grain production with higher proportions of forage, cereals and leguminous crops.
+- Introduction of advanced production technologies.
+-Development of national programs for the production of the main varieties of agricultural produce.
+-Development of agrarian science, training of research specialists and skilled agricultural personnel for rural areas.
+Most agricultural problems can be solved if the following conditions are in place:
+- State support for the sector;
+- Introduction and upholding of private property rights for agricultural lands;
+- Matching of farming methods with the most appropriate climatic zones and greater concentration of production;
+- Revival of best farming practices;
+- Co-operation among agricultural producers;
+CHAPTER 4 A Proposed Approach to Rural Development
+Chapter 4.
+A Proposed Approach to Rural Development
+
+- Integration between agricultural producers and processing factories, trade companies and banks.
+One recommendation is the earmarking of tax revenues from agricultural producers to a special agrarian fund that would be used to support agricultural development.
+A diversified network of basic agricultural support (private or public) should be established around the country, which would be controlled by a government agency and offer services to agricultural entities at lower rates, thus reducing growth in production costs.
+Simultaneously, technical and social infrastructure in villages should be restored or developed. Such construction programs would facilitate job creation and increase personal incomes in rural areas, which would improve the current economic situation.
+Recovery of agriculture would stimulate similar processes in mining, processing and other sectors, which would help alleviate employment and other negative social phenomena.
+A number of laws should be adopted to establish a favourable legal framework for the sector and potentially contribute to more efficient production, after an analysis of the specifics of agricultural development and the current legislative framework. Among the required laws are:
+A law "On State Support of Agricultural Production", which should encourage fair conditions for production exchange between agriculture and the industry which supplies the means of production to farmers. The law should suggest mechanisms to ensure stability of the food market, reduce demand and supply and identify financial mechanisms for the agrarian sector A law "On Agricultural Co-operatives" that would define the role of the state in the development of agricultural co-operatives.
+Other important laws include "The Law on State Role in Imports of Agricultural Produce", "The Law on Agrarian Scientific Organizations", "The Law on Households", 'The Law on Agricultural Leasing", "The Law on Financial Revival of Agricultural Entities" and "The Law on Agricultural Zones of the Republic of Kazakhstan", which would define areas favorable for settlement.
+To address the issue of food supply a number of laws need to be adopted, such as:
+"On Food Security", which should provide a definition of food supply crisis, set numbers for the required state food reserves, define groups eligible for food aid and identify cases in which the state could ask the international community for help;
+Laws "On Agricultural Co-operatives" and "On Agrarian-Financial Consortiums" would provide an opportunity for horizontal and vertical co-operation with trade, capital, the processing industry and banks;
+A law "On Agricultural Production Zones" to designate the lands and the kinds of production encouraged by the state
+
+[middle section removed for prompt length]
+
+t for 6 to 24 year olds (this target should also be included in the National Long-term Education Development Strategy 2010-2015).
+3) Differences in school enrolment levels in different regions were as much as 60 per cent. Almost 1 in 5 of rural under-16s are not enrolled, with some moving to study in cities.
+4) Income per capita in cities is, on average, 1.9 times higher than income per capita in rural areas. This is explained by higher unemployment in rural areas and a decrease in the ratio of wages in agriculture to wages in industry from 78% in 1991 to 29% in 2001.
+5) Inequality in terms of income levels and access to education results in highly contrasting HDI values for Kazakhstan's urban and rural areas: Kazakhstan's urban HDI values of 0.804 are equal to the 50 th country in the world rankings, whereas its rural HDI average of 0.725 is equivalent to only 96 th place in the world HDI list.
+6) Increased prevalence of poverty, especially in rural areas. The proportion of the rural population living below the poverty line (38%) is almost twice as high as in urban areas (20.4%).
+Nevertheless, in five oblasts over one third of the urban population can be classified as poor.
+7) The Human Development Index as a composite indicator, offers a comprehensive assessment of human development for a given time period, for a given territory, population group and gender.
+The HDI allows us to benchmark the dynamics of human development, evaluate the impact of different components of human development and to shape decision-making processes accordingly. Nevertheless, as with any statistical indicator, it has its limitations. HDI is, at best, a convenient simplification enabling us to make some simple comparisons of countries. We must therefore be careful in using it beyond its design potential, i.e. when applying it to oblasts rather than the whole country. It would be unwise to draw conclusions regarding human development solely on the basis of the HDI value. Deep analysis of human development calls for thorough research into economic, social, political and administrative conditions specific for each setting. This report is an attempt to comprehensively analyse the rural economy, the social sector and rural administration as major factors influencing rural development in Kazakhstan.
+Life expectancy, years Adult literacy, % Aggregate proportion of enrolled students from 6 to 24 years, % GDP per capita, USD at PPP Index of life expectancy Index of access to education Index of income per capita Index of human development (HDI)
+67.6
+97.8
+80.0 5,756
+0.710
+0.919
+0.676
+0.768
+67.4
+98.0
+80.0 5,561
+0.707
+0.920
+0.671
+0.766
+65.4
+98.3
+77.0 5,204
+0.673
+0.912
+0.660
+0.748
+64.9
+98.5
+75.0 4,711
+0.665
+0.907
+0.643
+0.738
+63.5
+98.7
+73.0 4,508
+0.642
+0.901
+0.636
+0.726
+63.6
+98.9
+75.0 4,682
+0.643
+0.909
+0.642
+0.732
+64.0
+99.1
+76.0 4,921
+0.650
+0.914
+0.650
+0.738
+64.5
+99.3
+77.0 4,269
+0.658
+0.919
+0.652
+0.743
+65.4
+99.5
+79.0 5,224
+0.673
+0.927
+0.660
+0.753 65,4
+99.5
+81.0 5,855
+0.673
+0.933
+0.679
+0.762 65,7
+99.5
+82.0 6,780
+0.678
+0.937
+0.704
+0.773 Table 5.5 HDI Dynamics for Kazakhstan (1991 to 2001) Source: Statistics Agency of Kazakhstan, 2001
+

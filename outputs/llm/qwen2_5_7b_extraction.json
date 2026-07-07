@@ -1,0 +1,299 @@
+{
+  "model": "qwen2.5:7b",
+  "chapter_summaries": [
+    {
+      "chapter_number": 1,
+      "chapter_title": "Rural Development in Kazakhstan",
+      "summary_under_100_words": "This report examines rural development in Kazakhstan since 1991, focusing on the socio-economic aspects and challenges faced during agricultural reforms. It highlights the importance of sustainable human development through balanced policies involving economic growth, social sector improvements, and administrative reforms.",
+      "key_points": [
+        "Rural areas account for most of Kazakhstan's territory and population.",
+        "Agricultural reforms were rapid from 1992-1994 but faced challenges like price disparity and inflation.",
+        "Sustainable development requires a balanced approach involving economic, social, and administrative sectors."
+      ],
+      "important_indicators_or_numbers": [
+        {
+          "indicator": "Percentage of Kazakhstan's territory occupied by rural areas",
+          "value": "97.2%",
+          "context": "This highlights the significance of rural development in the country.",
+          "source_page_range": "13-20"
+        }
+      ],
+      "themes_present": [
+        "education",
+        "health",
+        "inequality",
+        "economy",
+        "gender",
+        "climate_environment",
+        "employment"
+      ],
+      "limitations_or_uncertainties": [
+        "The report does not provide specific numerical data for all indicators."
+      ]
+    },
+    {
+      "chapter_number": 2,
+      "chapter_title": "The Economy as a Factor in Sustainable Rural Human Development",
+      "summary_under_100_words": "In Kazakhstan, rural areas face significant economic challenges with high poverty rates and declining living standards due to migration and prioritization of urban development. Economic growth must be accompanied by social programs for sustainable human development.",
+      "key_points": [
+        "High poverty rate in rural areas (38%) compared to the national average (28.4%).",
+        "Migration of working-age population exacerbates rural demographic issues.",
+        "Economic growth should include social services, gender equality, and environmental protection.",
+        "Kazakhstan has vast arable land but faces challenges like declining irrigated lands and water mismanagement.",
+        "Land degradation and overexploitation have damaged the steppe ecosystem."
+      ],
+      "important_indicators_or_numbers": [
+        {
+          "indicator": "Share of population with incomes below subsistence minimum",
+          "value": "38%",
+          "context": "In rural areas in 2001",
+          "source_page_range": "21-26"
+        },
+        {
+          "indicator": "Irrigated land area",
+          "value": "1.2 million hectares",
+          "context": "Since the early 1990s, down from 2.3 million hectares",
+          "source_page_range": "21-26"
+        }
+      ],
+      "themes_present": [
+        "education",
+        "health",
+        "inequality",
+        "economy",
+        "gender",
+        "climate_environment",
+        "employment"
+      ],
+      "limitations_or_uncertainties": [
+        "Migration of working-age population affects rural demographics and economic potential."
+      ]
+    },
+    {
+      "chapter_number": 3,
+      "chapter_title": "Social Development in Rural Kazakhstan",
+      "summary_under_100_words": "The chapter discusses demographic challenges, ethnic composition changes, and social development initiatives in rural Kazakhstan. Despite economic growth, poverty remains high in regions like Mangistau and Atyrau, highlighting the need for effective social policies.",
+      "key_points": [
+        "High poverty levels despite significant GDP contributions",
+        "Demographic decline with falling birth rates and migration to cities",
+        "Rural population decreases by 440,695 people between 1989-1999",
+        "Gender-age structure shows more women in reproductive age groups",
+        "Ethnic composition shifts towards Kazakhs and away from Russians"
+      ],
+      "important_indicators_or_numbers": [
+        {
+          "indicator": "Poverty levels",
+          "value": null,
+          "context": "Up to 87% in some rural areas of Mangistau oblast",
+          "source_page_range": "27-48"
+        },
+        {
+          "indicator": "Population decrease",
+          "value": "-1.2 million people (7.5%) between 1989 and 1999",
+          "context": null,
+          "source_page_range": "27-48"
+        }
+      ],
+      "themes_present": [
+        "education",
+        "health",
+        "inequality",
+        "economy",
+        "gender",
+        "climate_environment",
+        "employment"
+      ],
+      "limitations_or_uncertainties": [
+        "Limited data on specific social indicators and economic policies",
+        "Dependence on government support for civil society development"
+      ]
+    },
+    {
+      "chapter_number": 4,
+      "chapter_title": "A Proposed Approach to Rural Development",
+      "summary_under_100_words": "This chapter outlines a strategy for rural development in Kazakhstan focusing on agricultural and infrastructure improvements. It highlights the need for state support, private property rights, and integrated policies involving local communities. Key issues include unemployment, poverty, and disparities between urban and rural areas.",
+      "key_points": [
+        "Focus on agricultural and infrastructure development",
+        "State support and private property rights essential",
+        "Integrated policies involving local communities",
+        "Addressing unemployment, poverty, and regional disparities"
+      ],
+      "important_indicators_or_numbers": [
+        {
+          "indicator": "Percentage of rural population living below the poverty line",
+          "value": "38%",
+          "context": "Rural areas have higher poverty rates compared to urban areas (20.4%)",
+          "source_page_range": "49-58"
+        },
+        {
+          "indicator": "Human Development Index (HDI) for rural areas",
+          "value": "0.725",
+          "context": "Rural HDI is lower than urban HDI (0.804)",
+          "source_page_range": "49-58"
+        }
+      ],
+      "themes_present": [
+        "education",
+        "health",
+        "inequality",
+        "economy",
+        "gender",
+        "climate_environment",
+        "employment"
+      ],
+      "limitations_or_uncertainties": [
+        "HDI is a simplification and should not be used for detailed analysis of rural areas",
+        "Disparities between urban and rural areas in terms of income, education, and health"
+      ]
+    }
+  ],
+  "full_report_extraction": {
+    "model": "qwen2.5:7b",
+    "report_title": "Rural Development in Kazakhstan: Challenges and Prospects",
+    "country": "Kazakhstan",
+    "report_year": 2002,
+    "full_report_key_findings": [
+      "The proportion of rural population with incomes below the living minimum is high, ranging from 44% to 95% across different regions.",
+      "Unemployment rates are significantly higher among males in certain age groups (16.5% and 20.2%) compared to females (19.3% and 21.0%).",
+      "Entrepreneurial activity is low, with only 0.2% of households with incomes below the subsistence minimum currently running their own business.",
+      "Access to health care remains a challenge, with over 77% of rural population unsure about what services are provided in the guaranteed package.",
+      "State expenditure on education and health protection has decreased from previous years."
+    ],
+    "key_strengths": [
+      "The government resolution 'On improved quality of medical aid offered to the rural population' has reversed some negative trends since 1999.",
+      "Some 84.5% of low-income households have access to land, which could be a potential resource for economic activities."
+    ],
+    "key_challenges": [
+      "High unemployment rates and limited employment opportunities in rural areas.",
+      "Low entrepreneurial activity among low-income households due to lack of start-up capital and knowledge.",
+      "Decreased state expenditure on education and health protection.",
+      "Limited access to social services, particularly health care."
+    ],
+    "core_indicators": [
+      {
+        "indicator": "Proportion of rural population with income below the living minimum",
+        "value": "44%-95%",
+        "unit": "%",
+        "year_or_period": "2001",
+        "context": "Highest in Mangistau (95%), Zhambyl (53%), Atyrau (48%), Kyzylorda (47%), Aktobe (45%) and South Kazakhstan (44%).",
+        "source_basis": "chapter/evidence line"
+      },
+      {
+        "indicator": "Unemployment rate among males in certain age groups",
+        "value": "16.5% and 20.2%",
+        "unit": "%",
+        "year_or_period": "2001",
+        "context": "Higher than females (19.3% and 21.0%) in these age groups.",
+        "source_basis": "chapter/evidence line"
+      },
+      {
+        "indicator": "Entrepreneurial activity among low-income households",
+        "value": "0.2%",
+        "unit": "%",
+        "year_or_period": "2001",
+        "context": "Only 71% of such households believe setting up a business could improve their welfare.",
+        "source_basis": "chapter/evidence line"
+      },
+      {
+        "indicator": "Access to health care among rural population",
+        "value": "Over 77%",
+        "unit": "%",
+        "year_or_period": "2001",
+        "context": "Rural population unsure about what services are provided in the guaranteed package.",
+        "source_basis": "chapter/evidence line"
+      },
+      {
+        "indicator": "State expenditure on education as a percentage of GDP",
+        "value": "3.2%",
+        "unit": "%",
+        "year_or_period": "2001",
+        "context": "Down from 3.3% in 2000.",
+        "source_basis": "chapter/evidence line"
+      },
+      {
+        "indicator": "State expenditure on health protection as a percentage of GDP",
+        "value": "1.9%",
+        "unit": "%",
+        "year_or_period": "2001",
+        "context": "Down from 2.1% in 2000.",
+        "source_basis": "chapter/evidence line"
+      }
+    ],
+    "theme_analysis": [
+      {
+        "theme": "education",
+        "importance": "high",
+        "evidence_summary": "State expenditure on education has decreased, and the majority of employed respondents have only secondary education.",
+        "keyword_count": 186
+      },
+      {
+        "theme": "health",
+        "importance": "medium",
+        "evidence_summary": "Health care access is limited, with high morbidity rates for rural population due to environmental factors.",
+        "keyword_count": 119
+      },
+      {
+        "theme": "inequality",
+        "importance": "high",
+        "evidence_summary": "High income inequality among rural households, with significant regional disparities in poverty levels.",
+        "keyword_count": 628
+      },
+      {
+        "theme": "economy",
+        "importance": "medium",
+        "evidence_summary": "Low entrepreneurial activity and high unemployment rates indicate economic challenges in rural areas.",
+        "keyword_count": 277
+      },
+      {
+        "theme": "gender",
+        "importance": "low",
+        "evidence_summary": "Unemployment rates are higher among males, but there is limited gender-specific data provided.",
+        "keyword_count": 90
+      },
+      {
+        "theme": "climate_environment",
+        "importance": "medium",
+        "evidence_summary": "Morbidity rates for rural population due to environmental factors and TB cases have increased since 1991.",
+        "keyword_count": 200
+      },
+      {
+        "theme": "employment",
+        "importance": "high",
+        "evidence_summary": "High unemployment rates, low entrepreneurial activity, and limited employment opportunities are significant challenges.",
+        "keyword_count": 98
+      }
+    ],
+    "time_or_demographic_trends_for_plots": [
+      {
+        "trend_name": "Proportion of rural population with income below the living minimum",
+        "values_or_description": "44%-95% in different regions, highest in Mangistau (95%).",
+        "plot_idea": "Line graph showing regional disparities over time."
+      },
+      {
+        "trend_name": "Unemployment rate among males and females",
+        "values_or_description": "16.5% and 20.2% for certain age groups, higher than females (19.3% and 21.0%).",
+        "plot_idea": "Bar chart comparing unemployment rates between genders."
+      },
+      {
+        "trend_name": "Entrepreneurial activity among low-income households",
+        "values_or_description": "Only 0.2% of such households currently run their own business.",
+        "plot_idea": "Pie chart showing the percentage of households engaged in entrepreneurial activities."
+      },
+      {
+        "trend_name": "State expenditure on education and health protection as a percentage of GDP",
+        "values_or_description": "3.2% for education, 1.9% for health protection, down from previous years.",
+        "plot_idea": "Line graph showing trends in state expenditure over time."
+      }
+    ],
+    "dashboard_ready_plot_ideas": [
+      "Proportion of rural population with income below the living minimum by region",
+      "Unemployment rates among males and females by age group",
+      "Entrepreneurial activity among low-income households",
+      "State expenditure on education and health protection as a percentage of GDP over time"
+    ],
+    "extraction_notes": [
+      "The data provided is from 2001, which may not reflect current conditions.",
+      "Some values are percentages without specific numbers, indicating uncertainty or need for further clarification."
+    ]
+  }
+}

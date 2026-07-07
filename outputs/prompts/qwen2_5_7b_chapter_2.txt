@@ -1,0 +1,58 @@
+﻿You are extracting information from the Kazakhstan National Human Development Report 2002.
+Model role: qwen2.5:7b extractor.
+
+Chapter 2: The Economy as a Factor in Sustainable Rural Human Development
+Source pages: 21-26
+
+TASK:
+Return JSON with this exact structure:
+{
+  "chapter_number": 2,
+  "chapter_title": "The Economy as a Factor in Sustainable Rural Human Development",
+  "summary_under_100_words": "chapter summary",
+  "key_points": ["specific key point"],
+  "important_indicators_or_numbers": [
+    {"indicator": "indicator name", "value": "reported value", "context": "source context", "source_page_range": "21-26"}
+  ],
+  "themes_present": ["education", "health", "inequality", "economy", "gender", "climate_environment", "employment"],
+  "limitations_or_uncertainties": ["specific limitation"]
+}
+
+Rules:
+- Summary must be fewer than 100 words.
+- Use only the chapter text.
+- If no numerical value is found, use an empty list.
+
+CHAPTER TEXT:
+According to official statistics, in 2001 the share of population with incomes below the subsistence minimum in rural areas was 38%, compared with 28.4% for the country as a whole.
+This indicates that it is virtually impossible to achieve the central development goal - that of a long, fulfilling and productive life - in the short term, especially in rural areas. One of the reasons for the existing imbalance between urban and rural areas is the adopted development strategy where development of cities, mining and construction sectors was prioritized.
+This policy has brought about a deterioration in the living standards of the rural
+2.1 The Rural Economy: an Analysis of the Processes population, whose make-up has changed due to the migration to cities of significant numbers of the working age population, leaving a skewed population structure with high proportions of children and the elderly. Currently, the elimination of biased attitudes towards the village has become a priority for state policy.
+At the same time, economic growth can lead to better living standards only if it is accompanied by implementation of a comprehensive social development program, including such elements as provision of basic social services, elimination of gender inequality, effective social protection and demographic policy.
+The Republic of Kazakhstan has a territory of 2,724,900 sq. km, which makes it the ninth largest country in the world. Its arable lands alone total some 39 million hectares. Besides this, around 22 million hectares suitable for irrigation have been identified in deserts and semi-deserts, with another 70 million hectares of saline land requiring not only irrigation but also complete reclamation.
+Kazakhstan's climate makes it possible to cultivate wheat, barley, oats and rye in most regions. Irrigated lands in southern regions are also home to such temperature-sensitive crops as cotton, tobacco, rice, sugar beet as well as grapes and other fruits. In the early 1990s Kazakhstan had 2.3 million hectares of irrigated lands, which accounted for nearly 6% of the total sown area, yielding up to 30% of crop production. Since then the area of irrigated land has been reduced to 1.2 million hectares and yields have fallen 1.5 to 2 times. The landreclamation qualities of soils have been deteriorating, while the technical condition of water stations has also worsened.
+Natural pasture accounts for 187.9 million hectares of land, which is enough to feed 70.5 million head of sheep or 7.05 million cattle.
+Kazakhstan's climate is favourable for livestock farming, as most pastures can be utilised throughout the year as Ã  forage base.
+Massive exploitation of "virgin lands" in the 1950s, 60s and 70s significantly damaged Figure 2.1 Structure of agricultural land as of January 1st 2001 Source: Statistics Agency of Kazakhstan, 2001 the steppe ecosystem of Kazakhstan. The national report "Land Degradation" points out that the share of newly ploughed lands ranged from 40 to 80% of the total area, and as much as 90% in northern regions. The scale of ploughing far exceeded environmentally safe levels and radically altered the hydrological, vegetational and even climatic characteristics of ecosystems. The pasture load on unploughed lands grew, due both to the reduced pasture available and a larger cattle stock. The latter was encouraged to ensure year-round employment of people who had moved in as part of the "virgin lands" program. However, CHAPTER 2 The Economy as a Factor in Sustainable Rural Human Development
+Chapter 2.
+The Economy as a Factor in Sustainable Rural Human Development
+
+there was no scientific foundation for this policy: livestock per hectare of pasture exceeded established norms by 100-500%. Most affected were pastures located close to villages, milking sites and wells, where overexploitation led to total the disappearance of grass.
+Among the factors contributing to a deteriorating quality of life in rural areas is the problem of scarcity of water for irrigation. At the same time, the key issue with regard to water supply and the environment is not so much water shortage as highly uneconomical water consumption, far exceeding consumption levels in countries with comparable climates. This situation is brought about by the use of primitive irrigation and transportation technologies, as well as a lack of economic incentives and water saving traditions.
+Huge filtration losses and excessively high irrigation norms are causing secondary salinity, swamping and water erosion, while the dumping of drainage waters results in the pollution of rivers with fertilizers and pesticides, as well as excessive mineralization. Overregulation of the hydrological network has had an adverse impact on biodiversity. Over 4,000 dams, cattle ponds and reservoirs were built to ensure water supply for cattle watering and irrigation needs, with most of them constructed without hydrological feasibility studies. Only a fraction of the dammed water was used rationally, while most of it was lost as ground water run off.
+Many lakes have dried up, while others have experienced increased mineralization levels, and consequently loss of their economic significance with regard to drinking water and fish supply.
+Environmental factors have the following effects on the rural economy:
+a) Falling yields and lower aggregate output of the crop farming sector; b) falling cattle stocks and yields; c) reduced export potential of the agricultural sector; d) slowdown in development of food production and light industry; e) sharp decline in tax revenue from agricultural and processing sectors The early 1990s saw the start of reforms in agriculture as part of the transition from a centrally planned to a market economy. To make this transition possible agricultural production was to undergo structural changes th
+
+[middle section removed for prompt length]
+
+marginalisation in cities.
+The social fabric therefore acquires a new quality as a result of old and new division lines - regional, residential, social, economic, ethnic and educational - such that problems tend to concentrate at points where possible solutions are very limited. One of consequences of this process is a reduction of social capital (measured as the level of mutual public trust) and decreased confidence in state structures.
+Thus, analysis of the basic economic indicators of rural development points to a close connection between economic growth rates and human development levels. Falls in GDP have an adverse impact on population income levels, as well as employment and social and environmental security, causing uncontrollable migration away from rural areas.
+Among the poor, in addition to 'traditionally' vulnerable population groups such as children, the disabled and pensioners, are people that are usually classified as 'able to work'. It is among this latter population group that there is potential for poverty reduction and the fostering of human development through economic development. This statement is well established, since one of the basic conditions for supporting sustainable income sources in rural areas is to promote greater diversification in agricultural production and simplify access to productive land through redistribution of land plots and improved soil quality.
+It is also of utmost importance to conduct a pricing policy to eliminate discrepancies against the rural sector, and to expand domestic markets by improving links between farming and non-farming sectors in rural areas, as well as links between the rural non-farming and industrial sectors by setting up local processing facilities. Among other factors contributing to poverty reduction are improved quality of production infrastructure, better access to environmentally-friendly technologies for the rural population, as well as credit resources at reasonable rates. All these would foster job creation opportunities, especially for women and other employment-vulnerable groups plus better access to job locations, markets and basic public services, and of course improved environmental conditions.
+To reiterate, one should not rely solely on economic methods to solve all rural problems:
+Kazakhstan's long-term development cannot be sustainable without development of its rural population.
+Rural development has its own inherent value, since land degradation, including that of abandoned territories, limits the overall human resource. The rural population has a right to claim some resource re-distribution in its favour to compensate for various types of handicap in terms of climate, geography, culture and information and to be given opportunities for further development as inhabitants of rural areas.
+For the foreseeable future certain environmentally damaged rural areas cannot be supported without severe strain on the whole country. Rural dwellers in these cases might be assisted to change residence while these territories would be considered as a potential 'reserve' for future development in more favourable circumstances.
+

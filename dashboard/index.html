@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kazakhstan 2002 Development Intelligence Dashboard</title>
+  <style>
+    :root {
+      --ink: #14213d;
+      --muted: #52657a;
+      --line: #d8e0ea;
+      --bg: #f5f7fa;
+      --panel: #ffffff;
+      --blue: #2f6df6;
+      --green: #0e9f6e;
+      --amber: #b7791f;
+      --red: #d64545;
+      --violet: #6d5bd0;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--bg);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.45;
+    }
+
+    header {
+      background: var(--panel);
+      border-bottom: 1px solid var(--line);
+      padding: 24px 32px;
+    }
+
+    main {
+      max-width: 1220px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 18px;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 15px;
+    }
+
+    p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .metrics {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      margin-bottom: 16px;
+    }
+
+    .two {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      margin-bottom: 16px;
+    }
+
+    .panel,
+    .metric {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+    }
+
+    .metric span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+
+    .metric strong {
+      display: block;
+      font-size: 28px;
+    }
+
+    .bar-row {
+      display: grid;
+      grid-template-columns: 150px minmax(120px, 1fr) 58px;
+      gap: 12px;
+      align-items: center;
+      margin: 11px 0;
+      min-height: 28px;
+      font-size: 14px;
+    }
+
+    .track {
+      height: 16px;
+      background: #e6edf5;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .fill {
+      height: 100%;
+      border-radius: 999px;
+      background: var(--blue);
+    }
+
+    .green { background: var(--green); }
+    .amber { background: var(--amber); }
+    .red { background: var(--red); }
+    .violet { background: var(--violet); }
+
+    .chart {
+      width: 100%;
+      min-height: 260px;
+      overflow: visible;
+    }
+
+    .axis {
+      stroke: #9aabba;
+      stroke-width: 1;
+    }
+
+    .gridline {
+      stroke: #e6edf5;
+      stroke-width: 1;
+    }
+
+    .label {
+      fill: var(--muted);
+      font-size: 12px;
+    }
+
+    .value-label {
+      fill: var(--ink);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .tooltip {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    th,
+    td {
+      border-bottom: 1px solid var(--line);
+      padding: 10px 8px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .note {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 900px) {
+      header { padding: 20px; }
+      main { padding: 16px; }
+      .metrics,
+      .two { grid-template-columns: 1fr; }
+      .bar-row { grid-template-columns: 118px minmax(100px, 1fr) 48px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kazakhstan 2002 Development Intelligence Dashboard</h1>
+    <p>Local PDF-to-LLM pipeline outputs for the National Human Development Report 2002.</p>
+  </header>
+
+  <main>
+    <section class="grid metrics" aria-label="Key metrics">
+      <div class="metric"><span>Cleaned report text</span><strong>38,944</strong><p>words</p></div>
+      <div class="metric"><span>Chapter chunks</span><strong>4</strong><p>report chapters segmented</p></div>
+      <div class="metric"><span>Rural territory</span><strong>97.2%</strong><p>of Kazakhstan's territory</p></div>
+      <div class="metric"><span>Rural poverty</span><strong>38%</strong><p>below subsistence minimum in 2001</p></div>
+    </section>
+
+    <section class="grid two">
+      <div class="panel">
+        <h2>Plot 1: Theme Distribution</h2>
+        <div class="bar-row"><span>Inequality</span><div class="track"><div class="fill red" title="Inequality: 628" style="width:100%"></div></div><strong>628</strong></div>
+        <div class="bar-row"><span>Economy</span><div class="track"><div class="fill amber" title="Economy: 277" style="width:44%"></div></div><strong>277</strong></div>
+        <div class="bar-row"><span>Environment</span><div class="track"><div class="fill green" title="Climate/environment: 200" style="width:32%"></div></div><strong>200</strong></div>
+        <div class="bar-row"><span>Education</span><div class="track"><div class="fill" title="Education: 186" style="width:30%"></div></div><strong>186</strong></div>
+        <div class="bar-row"><span>Health</span><div class="track"><div class="fill" title="Health: 119" style="width:19%"></div></div><strong>119</strong></div>
+        <div class="bar-row"><span>Employment</span><div class="track"><div class="fill amber" title="Employment: 98" style="width:16%"></div></div><strong>98</strong></div>
+        <div class="bar-row"><span>Gender</span><div class="track"><div class="fill green" title="Gender: 90" style="width:14%"></div></div><strong>90</strong></div>
+        <p class="tooltip">Hover over bars to inspect counts. Counts come from deterministic keyword matching over chapter chunks.</p>
+      </div>
+
+      <div class="panel">
+        <h2>Plot 2: Regional Rural Poverty</h2>
+        <div class="bar-row"><span>Mangistau</span><div class="track"><div class="fill red" title="Mangistau: 95%" style="width:95%"></div></div><strong>95%</strong></div>
+        <div class="bar-row"><span>Zhambyl</span><div class="track"><div class="fill amber" title="Zhambyl: 53%" style="width:53%"></div></div><strong>53%</strong></div>
+        <div class="bar-row"><span>Atyrau</span><div class="track"><div class="fill amber" title="Atyrau: 48%" style="width:48%"></div></div><strong>48%</strong></div>
+        <div class="bar-row"><span>Kyzylorda</span><div class="track"><div class="fill amber" title="Kyzylorda: 47%" style="width:47%"></div></div><strong>47%</strong></div>
+        <div class="bar-row"><span>Aktobe</span><div class="track"><div class="fill amber" title="Aktobe: 45%" style="width:45%"></div></div><strong>45%</strong></div>
+        <div class="bar-row"><span>South Kaz.</span><div class="track"><div class="fill amber" title="South Kazakhstan: 44%" style="width:44%"></div></div><strong>44%</strong></div>
+        <p class="tooltip">Values are regional shares of rural population below the living minimum extracted from the evidence lines.</p>
+      </div>
+    </section>
+
+    <section class="grid two">
+      <div class="panel">
+        <h2>Plot 3: Agriculture Share of GDP</h2>
+        <svg class="chart" viewBox="0 0 560 280" role="img" aria-label="Line chart showing agriculture share of GDP falling from 34 percent in 1990 to 8.7 percent in 2001">
+          <line class="gridline" x1="60" y1="38" x2="510" y2="38"></line>
+          <line class="gridline" x1="60" y1="104" x2="510" y2="104"></line>
+          <line class="gridline" x1="60" y1="170" x2="510" y2="170"></line>
+          <line class="axis" x1="60" y1="236" x2="510" y2="236"></line>
+          <line class="axis" x1="60" y1="38" x2="60" y2="236"></line>
+          <text class="label" x="18" y="42">35%</text>
+          <text class="label" x="18" y="108">24%</text>
+          <text class="label" x="18" y="174">13%</text>
+          <text class="label" x="20" y="240">0%</text>
+          <polyline points="80,44 300,180 490,187" fill="none" stroke="#2f6df6" stroke-width="4"></polyline>
+          <circle cx="80" cy="44" r="6" fill="#2f6df6"><title>1990: 34%</title></circle>
+          <circle cx="300" cy="180" r="6" fill="#2f6df6"><title>1999: 9.9%</title></circle>
+          <circle cx="490" cy="187" r="6" fill="#2f6df6"><title>2001: 8.7%</title></circle>
+          <text class="label" x="68" y="260">1990</text>
+          <text class="label" x="288" y="260">1999</text>
+          <text class="label" x="478" y="260">2001</text>
+          <text class="value-label" x="92" y="42">34%</text>
+          <text class="value-label" x="312" y="180">9.9%</text>
+          <text class="value-label" x="502" y="187">8.7%</text>
+        </svg>
+        <p class="tooltip">This trend captures the structural decline of agriculture in GDP during the transition period.</p>
+      </div>
+
+      <div class="panel">
+        <h2>Plot 4: Model Evaluation Scores</h2>
+        <svg class="chart" viewBox="0 0 560 280" role="img" aria-label="Radar chart comparing Qwen and Llama evaluator scores">
+          <polygon points="280,48 456,118 389,226 171,226 104,118" fill="none" stroke="#e6edf5" stroke-width="1"></polygon>
+          <polygon points="280,86 420,142 366,226 194,226 140,142" fill="none" stroke="#e6edf5" stroke-width="1"></polygon>
+          <polygon points="280,124 384,166 342,226 218,226 176,166" fill="none" stroke="#e6edf5" stroke-width="1"></polygon>
+          <polygon points="280,162 348,190 319,226 241,226 212,190" fill="none" stroke="#e6edf5" stroke-width="1"></polygon>
+          <line class="gridline" x1="280" y1="226" x2="280" y2="48"></line>
+          <line class="gridline" x1="280" y1="226" x2="456" y2="118"></line>
+          <line class="gridline" x1="280" y1="226" x2="389" y2="226"></line>
+          <line class="gridline" x1="280" y1="226" x2="171" y2="226"></line>
+          <line class="gridline" x1="280" y1="226" x2="104" y2="118"></line>
+          <polygon points="280,190 315,204 302,226 258,226 245,204" fill="rgba(47,109,246,.22)" stroke="#2f6df6" stroke-width="3">
+            <title>Qwen: 1/5 for all evaluator dimensions</title>
+          </polygon>
+          <polygon points="280,190 315,204 302,226 258,226 245,204" fill="rgba(14,159,110,.22)" stroke="#0e9f6e" stroke-width="2" stroke-dasharray="5 4">
+            <title>Llama: 1/5 for all evaluator dimensions</title>
+          </polygon>
+          <text class="label" x="246" y="36">Consistency</text>
+          <text class="label" x="462" y="118">Completeness</text>
+          <text class="label" x="372" y="248">Factual align.</text>
+          <text class="label" x="78" y="248">Numerical extraction</text>
+          <text class="label" x="42" y="118">Dashboard use</text>
+          <text class="value-label" x="210" y="24">Qwen and Llama: 1/5 on all Gemma criteria</text>
+        </svg>
+        <p class="tooltip">The evaluator scoring was unusually strict, so the report interprets the qualitative comments alongside the numeric scores.</p>
+      </div>
+    </section>
+
+    <section class="grid two">
+      <div class="panel">
+        <h2>Plot 5: Barriers to Entrepreneurship</h2>
+        <div class="bar-row"><span>Start-up capital</span><div class="track"><div class="fill red" title="Lack of start-up capital: 68%" style="width:68%"></div></div><strong>68%</strong></div>
+        <div class="bar-row"><span>Loan access</span><div class="track"><div class="fill amber" title="Difficulty securing a loan: 38%" style="width:38%"></div></div><strong>38%</strong></div>
+        <div class="bar-row"><span>Knowledge gap</span><div class="track"><div class="fill violet" title="Lack of knowledge and experience: 34%" style="width:34%"></div></div><strong>34%</strong></div>
+        <p class="tooltip">These survey findings explain why only 0.2% of low-income households were running a business.</p>
+      </div>
+
+      <div class="panel">
+        <h2>Plot 6: Public Social Spending</h2>
+        <svg class="chart" viewBox="0 0 560 280" role="img" aria-label="Grouped bar chart for education and health spending as a percentage of GDP">
+          <line class="axis" x1="70" y1="230" x2="500" y2="230"></line>
+          <line class="axis" x1="70" y1="50" x2="70" y2="230"></line>
+          <line class="gridline" x1="70" y1="80" x2="500" y2="80"></line>
+          <line class="gridline" x1="70" y1="130" x2="500" y2="130"></line>
+          <line class="gridline" x1="70" y1="180" x2="500" y2="180"></line>
+          <rect x="145" y="65" width="54" height="165" fill="#2f6df6"><title>Education 2000: 3.3% of GDP</title></rect>
+          <rect x="205" y="70" width="54" height="160" fill="#7aa2ff"><title>Education 2001: 3.2% of GDP</title></rect>
+          <rect x="335" y="125" width="54" height="105" fill="#0e9f6e"><title>Health 2000: 2.1% of GDP</title></rect>
+          <rect x="395" y="135" width="54" height="95" fill="#7cd8b5"><title>Health 2001: 1.9% of GDP</title></rect>
+          <text class="label" x="18" y="84">3%</text>
+          <text class="label" x="18" y="134">2%</text>
+          <text class="label" x="18" y="184">1%</text>
+          <text class="label" x="156" y="252">Education</text>
+          <text class="label" x="365" y="252">Health</text>
+          <text class="value-label" x="142" y="58">3.3</text>
+          <text class="value-label" x="205" y="64">3.2</text>
+          <text class="value-label" x="337" y="118">2.1</text>
+          <text class="value-label" x="397" y="128">1.9</text>
+          <text class="label" x="128" y="30">Darker bars: 2000. Lighter bars: 2001. Values are % of GDP.</text>
+        </svg>
+        <p class="tooltip">Both education and health spending decreased between 2000 and 2001.</p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Structured Indicator Table</h2>
+      <table>
+        <thead>
+          <tr><th>Indicator</th><th>Value</th><th>Context</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Agriculture share of GDP</td><td>34% to 8.7%</td><td>Fell from 1990 to 2001.</td></tr>
+          <tr><td>Rural population decrease</td><td>440,695</td><td>Decrease between 1989 and 1999 censuses.</td></tr>
+          <tr><td>Rural population share</td><td>44%</td><td>6,579,064 rural residents after the 1999 census period.</td></tr>
+          <tr><td>Education spending</td><td>3.2% of GDP</td><td>2001, down from 3.3% in 2000.</td></tr>
+          <tr><td>Health spending</td><td>1.9% of GDP</td><td>2001, down from 2.1% in 2000.</td></tr>
+          <tr><td>Low-income entrepreneurship</td><td>0.2%</td><td>Share of low-income households running their own business.</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Data source: local extraction outputs from the Kazakhstan NHDR 2002 pipeline. Table-heavy values should be checked against the original PDF before final PDF submission.</p>
+    </section>
+  </main>
+</body>
+</html>
